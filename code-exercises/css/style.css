@@ -20,7 +20,12 @@ font-size: 50px;
   color: red;
 }
 
-
+.article {
+  background-image: url(../img/Penguin.png);
+  background-size: cover;
+  background-color: green;
+  height: 2000px;
+}
 
 .container {
   background-image: url(../img/hollow-knight.jpg);
@@ -31,6 +36,7 @@ font-size: 50px;
   width: 75%;
 }
 
+}
 @media screen and (max-width: 1500px) {
   body {
     background-color: #AAF0EB;
