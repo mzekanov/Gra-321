@@ -1,16 +1,640 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>#</title>
+    <title></title>
     <meta charset="UTF-8">
     <meta name="description" content="#">
     <meta name="keywords" content="#">
-    <meta name="author" content="#">
+    <meta name="author" content="Milos Zekanovic">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
     <link href="css/normalize.css" type="text/css" rel="stylesheet">
     <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
+<body>
+  <header>
+
+
+    <img id="logo"
+
+src="img/charliescafe-logo_icon.jpg" alt="Charlies logo"
+
+</header>
+  <button class="openbtn" onclick="openNav()">☰ </button>
+
+
+<div id="mySidepanel" class="sidepanel">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+ <a href="#">Menu</a>
+ <a href="#">Location & Hours</a>
+ <a href="#">Contact</a>
+ <a href="#">About us</a>
+</div>
+
+<h2></h2>
+<p>
+</p>
+
+<script>
+function openNav() {
+ document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+ document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+</div>
+</div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="img/nafinia-putra-Kwdp-0pok-I-unsplash.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/coffee-bar.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/charliescafe.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  <h1>Menu</h1>
+
   <body>
-  <h1>Placeholder Text</h1>
+
+    <!-- start test -->
+    <div class="special-drinks">
+   <h2> Special Drinks<h2>
+
+     <div class="menu-item-row">
+       <p></p>
+       <ul>
+         <li>S</li>
+         <li>M</li>
+         <li>L</li>
+       </ul>
+
+     </div>
+
+     <div class="menu-item-row">
+<p class="drink-name">Thai Iced Cappuccino</p>
+<ul>
+<li>2.75</li>
+<li>3.45</li>
+<li>4.50</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Joyous Almond Latte</p>
+<ul>
+<li>2.45</li>
+<li>3.75</li>
+<li>4.45</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Banana Nut Mocha</p>
+<ul>
+<li>2.30</li>
+<li>3.60</li>
+<li>4.20</li>
+</ul>
+</div>
+</div>
+
+<div class="Panini">
+  <ul>
+    <li class="left">Italiano
+      <ul>
+        <li>Grilled baguette with prosciutto, mozzarella, sliced tomato,
+          Basil pesto and a touch of balsamic vinegar.
+          </li>
+      </ul>
+    </li>
+
+
+    <li class="left">Seville
+      <ul>
+        <li>Grilled baguette with spanish chorizo, mozzarella, sliced tomato, roasted red pepper, sun dried tomato pesto, and a touch of balsamic vinegar.</li>
+      </ul>
+    </li>
+
+
+    <li class="Left">Milano
+      <ul>
+        <li> Grilled baguette with prosciutto, salami, ham, mozzarella, sliced tomato, pepperoncini, basil pesto, and a touch of balsamic vinegar.</li>
+      </ul>
+
+    </li>
+
+
+    <li class="right">Caprese
+      <ul>
+        <li>Grilled baguette with mozzarella, sliced tomato, fresh basil.
+          Basil pesto and a touch of balsamic vinegar.
+          </li>
+      </ul>
+    </li>
+
+    <li class="right">Vegetarian Panini
+      <ul>
+        <Li> Grilled herb focaccia with mozzarella, feta cheese, roasted red peppers, marinated artichoke, tomato, red onion, and finished with basil pesto.</Li>
+
+        </Li>
+      </ul>
+    </li>
+
+    <li class="right">Mediterranean Chicken
+      <ul>
+        <li> Grilled focaccia with special chicken breast. Mozzarella, roasted red peppers, sliced tomato and sun dried tomato pesto.
+        </li>
+      </ul>
+
+    </li>
+
+
+  </ul>
+</div>
+
+
+<div class="Standard-Drinks">
+   <h2>Standard Drinks<h2>
+
+     <div class="menu-item-row">
+       <p></p>
+       <ul>
+         <li>S</li>
+         <li>M</li>
+         <li>L</li>
+       </ul>
+     </div>
+
+     <div class="menu-item-row">
+<p class="drink-name">Espresso</p>
+<ul>
+<li>1.75</li>
+<li>2.25</li>
+<li>3.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Espresso Macchiato</p>
+<ul>
+<li>2.00</li>
+<li>2.50</li>
+<li>3.25</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Americano</p>
+<ul>
+<li>1.75</li>
+<li>2.25</li>
+<li>3.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Cappuccino</p>
+<ul>
+<li>2.75</li>
+<li>3.50</li>
+<li>4.25</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Caffe Latte</p>
+<ul>
+<li>3.00</li>
+<li>3.75</li>
+<li>4.50</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Caffe Mocha</p>
+<ul>
+<li>3.25</li>
+<li>4.00</li>
+<li>4.75</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Caramel macchiato</p>
+<ul>
+<li>2.00</li>
+<li>3.25</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Drip Coffee</p>
+<ul>
+<li>1.65</li>
+<li>1.95</li>
+<li>2.25</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Hot Chocolate</p>
+<ul>
+<li>2.50</li>
+<li>3.15</li>
+<li>3.80</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Chai</p>
+<ul>
+<li>3.00</li>
+<li>3.75</li>
+<li>4.25</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Organic Tea</p>
+<ul>
+<li>1.25</li>
+<li>2.25</li>
+<li>3.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Almond Milk</p>
+<ul>
+<li>.75</li>
+<li>1.00</li>
+<li>2.25</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Soy Milk</p>
+<ul>
+<li>.50</li>
+<li>1.15</li>
+<li>2.20</li>
+</ul>
+</div>
+</div>
+
+
+<div class="Iced-Drinks">
+   <h2>Iced Drinks<h2>
+
+     <div class="menu-item-row">
+       <p></p>
+       <ul>
+         <li>S</li>
+         <li>M</li>
+         <li>L</li>
+       </ul>
+     </div>
+
+     <div class="menu-item-row">
+<p class="drink-name">Coffee</p>
+<ul>
+<li>2.00</li>
+<li>3.00</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Americano</p>
+<ul>
+<li>1.75</li>
+<li>2.40</li>
+<li>3.50</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Latte</p>
+<ul>
+<li>2.30</li>
+<li>3.20</li>
+<li>4.50</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Mocha</p>
+<ul>
+<li>2.20</li>
+<li>3.40</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Chai</p>
+<ul>
+<li>2.00</li>
+<li>3.00</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Mocha Frappe</p>
+<ul>
+<li>2.30</li>
+<li>3.20</li>
+<li>4.50</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Thai Cappuccino</p>
+<ul>
+<li>2.30</li>
+<li>3.20</li>
+<li>4.50</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Thai Tea</p>
+<ul>
+<li>1.50</li>
+<li>2.00</li>
+<li>2.75</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Iced Tea</p>
+<ul>
+<li>1.00</li>
+<li>1.75</li>
+<li>2.30</li>
+</ul>
+</div>
+</div>
+
+
+<div class="Hot-Teas">
+<h2>Hot Teas<h2>
+
+ <div class="menu-item-row">
+   <p></p>
+   <ul>
+     <li>S</li>
+     <li>M</li>
+     <li>L</li>
+   </ul>
+ </div>
+
+ <div class="menu-item-row">
+<p class="drink-name">Black Tea</p>
+<ul>
+<li>2.20</li>
+<li>3.40</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Early Grey</p>
+<ul>
+<li>2.30</li>
+<li>3.20</li>
+<li>4.50</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">English Breakfast</p>
+<ul>
+<li>2.00</li>
+<li>3.00</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Chai</p>
+<ul>
+<li>2.20</li>
+<li>3.40</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Grean Tea</p>
+<ul>
+<li>1.65</li>
+<li>2.16</li>
+<li>3.14</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Yerba Make</p>
+<ul>
+<li>2.20</li>
+<li>3.40</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Jasmine Green</p>
+<ul>
+<li>2.00</li>
+<li>3.00</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Sencha</p>
+<ul>
+<li>2.20</li>
+<li>3.40</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Raspberry Hibiscus</p>
+<ul>
+<li>1.65</li>
+<li>2.16</li>
+<li>3.14</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Herbal Tea</p>
+<ul>
+<li>2.20</li>
+<li>3.40</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Chamomile</p>
+<ul>
+<li>2.20</li>
+<li>3.40</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Lemon Ginger</p>
+<ul>
+<li>2.00</li>
+<li>3.00</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Mint</p>
+<ul>
+<li>2.20</li>
+<li>3.40</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Raspberry Pomegranate</p>
+<ul>
+<li>1.65</li>
+<li>2.16</li>
+<li>3.14</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Ice Tea</p>
+<ul>
+<li>2.20</li>
+<li>3.40</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Morrocan Mint Green</p>
+<ul>
+<li>2.20</li>
+<li>3.40</li>
+<li>4.00</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Black Passion fruit</p>
+<ul>
+<li>1.65</li>
+<li>2.16</li>
+<li>3.14</li>
+</ul>
+</div>
+
+<div class="menu-item-row">
+<p class="drink-name">Cucumber Mint Lemonade</p>
+<ul>
+<li>2.20</li>
+<li>3.40</li>
+<li>4.00</li>
+</ul>
+</div>
+</dev>
+
+
+<!-- end test -->
+<h1>Location & Hours</h1>
+
+
+<h3>Charlie's Café Hayden Library</h3>
+
+<h4>480-651-3215</h4>
+
+<h3>Charlie's Café Design North</h3>
+
+<h4>480-727-3463</h4>
+
+<h3>Charlie's Café Bio Design</h3>
+
+<h4>480-965-3515</h4>
+
+<div class="iframe">
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ax8h4rANp2n59gBsdIhuKmU4xf5lQi1G" width="600" height="550"></iframe>
+</div>
+
+<h1>About Us</h1>
+
+<div class= "about">
+<p> Charlie's Café, one of Sun Devil Dining’s local restaurant partners, brings the taste of Europe to ASU! Proudly serving Lavazza Italian espresso and featuring fresh European sandwiches and baked goods. Come experience the difference! With three locations on campus, there is always a Charlie's Cafe near! Charlie’s Café is located at the Hayden Library, Bio Design B Building and the College of Design.
+</p>
+</div>
   </body>
 </html>

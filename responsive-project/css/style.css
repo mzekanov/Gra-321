@@ -1,7 +1,243 @@
-* {
+header {
+background-color: white;
+width: 100%;
+height: 170px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+
+
+body {
+  background-color: #F7DEA4;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.sidepanel  {
+width: 0;
+position: fixed;
+z-index: 1;
+height: 500px;
+top: 0;
+left: 0;
+background-color: white;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidepanel a {
+padding: 50px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.sidepanel a:hover {
+color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+}
+
+.openbtn {
+font-size: 50px;
+cursor: pointer;
+background-color: white;
+color: black;
+padding: 40px 25px;
+border: none;
+position: absolute;
+top: 10px;
+left: 10px;
+}
+
+.openbtn:hover {
+background-color:#f1f1f1;
+}
+
+#logo {
+  display: block;
+  height: 150px;
+  width:150px;
+margin-left: auto;
+margin-right: auto;
 }
 
 h1 {
+font-family: "Arial Black",sans-serif;
+margin-left: auto;
+padding: 100px;
+text-align: center;
+color: #707070;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  padding-top: 0;
+  margin-top: 0%;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  bottom: 180px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.h3 {
+text-align: center;
+}
+
+.iframe {
+width: 500px;
+height: 500px;
+margin-left: auto;
+margin-right: auto;
+
 
 }
+
+.about {
+  line-height: 1.4;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 20px;
+margin-bottom: 50px;
+margin-right: 60px;
+margin-left: 60px;
+padding-bottom: 80px;
+}
+
+/*--- start  test ---*/
+h2 {
+margin: auto;
+padding: 100px;
+}
+
+li, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
+
+section {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+section  p, ul, li {
+  color:black;
+}
+
+.special-drinks, .Standard-drinks, .Iced-Drinks, .Hot-Teas {
+  margin: 0 auto;
+}
+
+ .menu-item-row {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0 1rem 0;
+}
+
+
+.menu-item-row ul {
+  width:250px;
+  list-style-type: none;
+  float: right;
+  text-align: right;
+}
+
+.menu-item-row ul li {
+
+  width:30%;
+  display:inline-block;
+}
+
+
+
+/*--- end test---*/
