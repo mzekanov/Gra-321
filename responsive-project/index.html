@@ -6,28 +6,31 @@
     <meta name="description" content="#">
     <meta name="keywords" content="#">
     <meta name="author" content="Milos Zekanovic">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/normalize.css" type="text/css" rel="stylesheet">
     <link href="./css/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
 <body>
-  <header>
-
-
+  <p></p>
+  <header class="header">
+   
     <img id="logo"
 
-src="img/charliescafe-logo_icon.jpg" alt="Charlies logo"
+   src="img/charliescafe-logo_icon.jpg" alt="Charlies logo">
 
-</header>
+  </header>
+
+  <!--hamburger menu start-->
+
   <button class="openbtn" onclick="openNav()">☰ </button>
 
 
 <div id="mySidepanel" class="sidepanel">
  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
  <a href="#">Menu</a>
- <a href="#">Location & Hours</a>
+ <a href="#">Location</a>
  <a href="#">Contact</a>
  <a href="#">About us</a>
 </div>
@@ -47,6 +50,8 @@ function closeNav() {
 </script>
 </div>
 </div>
+
+
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -109,11 +114,70 @@ function showSlides(n) {
 
   <h1>Menu</h1>
 
-  <body>
+ 
+
+
+    <div>
+      <h2 class="pannini">Panini & Sandwiches</h2>
+      <ul>
+        <li class="left">Italiano
+          <ul>
+            <li class="text">Grilled baguette with prosciutto, mozzarella, sliced tomato,
+              Basil pesto and a touch of balsamic vinegar.
+              </li>
+          </ul>
+        </li>
+    
+        <li class="left">Seville
+          <ul>
+            <li class="text">Grilled baguette with spanish chorizo, mozzarella, sliced tomato, roasted red pepper, sun dried tomato pesto, and a touch of balsamic vinegar.</li>
+          </ul>
+        </li>
+    
+    
+        <li class="left">Milano
+          <ul>
+            <li class="text">Grilled baguette with prosciutto, salami, ham, mozzarella, sliced tomato, pepperoncini, basil pesto, and a touch of balsamic vinegar.</li>
+          </ul>
+        </li>
+    
+    
+        <li class="left">Caprese
+          <ul>
+            <li class="text">Grilled baguette with mozzarella, 
+              sliced tomato, fresh basil.
+              Basil pesto and a touch of balsamic vinegar.
+              </li>
+          </ul>
+        </li>
+    
+        <li class="left">Vegetarian Panini
+          <ul>
+            <Li class="text"> Grilled herb focaccia with mozzarella, feta cheese, roasted red peppers, marinated artichoke, tomato, red onion, and finished with basil pesto.</Li>
+    
+            </Li>
+          </ul>
+        </li>
+    
+        <li class="left">Mediterranean Chicken
+          <ul>
+            <li class="text"> Grilled focaccia with special chicken breast. Mozzarella, roasted red peppers, sliced tomato and sun dried tomato pesto.
+            </li>
+          </ul>
+    
+        </li>
+    
+
+      </ul>
+    </div>
+
+   <div class="image"> 
+    <img src="img/italiano.jpg" style="width:80%">
+    </div>
 
     <!-- start test -->
     <div class="special-drinks">
-   <h2> Special Drinks<h2>
+   <h2> Special Drinks</h2>
 
      <div class="menu-item-row">
        <p></p>
@@ -152,61 +216,6 @@ function showSlides(n) {
 </ul>
 </div>
 </div>
-
-<div class="Panini">
-  <ul>
-    <li class="left">Italiano
-      <ul>
-        <li>Grilled baguette with prosciutto, mozzarella, sliced tomato,
-          Basil pesto and a touch of balsamic vinegar.
-          </li>
-      </ul>
-    </li>
-
-
-    <li class="left">Seville
-      <ul>
-        <li>Grilled baguette with spanish chorizo, mozzarella, sliced tomato, roasted red pepper, sun dried tomato pesto, and a touch of balsamic vinegar.</li>
-      </ul>
-    </li>
-
-
-    <li class="Left">Milano
-      <ul>
-        <li> Grilled baguette with prosciutto, salami, ham, mozzarella, sliced tomato, pepperoncini, basil pesto, and a touch of balsamic vinegar.</li>
-      </ul>
-
-    </li>
-
-
-    <li class="right">Caprese
-      <ul>
-        <li>Grilled baguette with mozzarella, sliced tomato, fresh basil.
-          Basil pesto and a touch of balsamic vinegar.
-          </li>
-      </ul>
-    </li>
-
-    <li class="right">Vegetarian Panini
-      <ul>
-        <Li> Grilled herb focaccia with mozzarella, feta cheese, roasted red peppers, marinated artichoke, tomato, red onion, and finished with basil pesto.</Li>
-
-        </Li>
-      </ul>
-    </li>
-
-    <li class="right">Mediterranean Chicken
-      <ul>
-        <li> Grilled focaccia with special chicken breast. Mozzarella, roasted red peppers, sliced tomato and sun dried tomato pesto.
-        </li>
-      </ul>
-
-    </li>
-
-
-  </ul>
-</div>
-
 
 <div class="Standard-Drinks">
    <h2>Standard Drinks<h2>
@@ -338,6 +347,10 @@ function showSlides(n) {
 </div>
 </div>
 
+<div class="image">
+  <img src="img/coffee cup.jpg" style="width:80%">
+</div>
+
 
 <div class="Iced-Drinks">
    <h2>Iced Drinks<h2>
@@ -433,9 +446,12 @@ function showSlides(n) {
 </div>
 </div>
 
+<div class="image">
+  <img src="img/iced tea.jpeg" style="width:80%">
+</div>
 
 <div class="Hot-Teas">
-<h2>Hot Teas<h2>
+<h2>Hot Teas</h2>
 
  <div class="menu-item-row">
    <p></p>
@@ -573,7 +589,7 @@ function showSlides(n) {
 </div>
 
 <div class="menu-item-row">
-<p class="drink-name">Ice Tea</p>
+<p class="drink-name">Tea</p>
 <ul>
 <li>2.20</li>
 <li>3.40</li>
@@ -607,32 +623,39 @@ function showSlides(n) {
 <li>4.00</li>
 </ul>
 </div>
-</dev>
+</div>
 
+<div class="image">
+  <img src="img/jasmine-tea-810x514.jpg" style="width:80%">
+  </div>
 
 <!-- end test -->
-<h1>Location & Hours</h1>
+<h1>Location</h1>
 
-
+<div class="all">
+<div class="location">
 <h3>Charlie's Café Hayden Library</h3>
+</div>
 
 <h4>480-651-3215</h4>
-
+<div class="location">
 <h3>Charlie's Café Design North</h3>
+</div>
 
 <h4>480-727-3463</h4>
-
+<div class="location">
 <h3>Charlie's Café Bio Design</h3>
+</div>
 
 <h4>480-965-3515</h4>
-
+</div>
 <div class="iframe">
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ax8h4rANp2n59gBsdIhuKmU4xf5lQi1G" width="600" height="550"></iframe>
 </div>
 
 <h1>About Us</h1>
 
-<div class= "about">
+<div class="about">
 <p> Charlie's Café, one of Sun Devil Dining’s local restaurant partners, brings the taste of Europe to ASU! Proudly serving Lavazza Italian espresso and featuring fresh European sandwiches and baked goods. Come experience the difference! With three locations on campus, there is always a Charlie's Cafe near! Charlie’s Café is located at the Hayden Library, Bio Design B Building and the College of Design.
 </p>
 </div>

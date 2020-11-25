@@ -11,7 +11,9 @@ body {
   background-color: #F7DEA4;
   margin: 0 auto;
   padding: 0;
+  width: 100%;
 }
+
 
 .sidepanel  {
 width: 0;
@@ -73,6 +75,7 @@ margin-right: auto;
 
 h1 {
 font-family: "Arial Black",sans-serif;
+font-size: 30px;
 margin-left: auto;
 padding: 100px;
 text-align: center;
@@ -88,6 +91,8 @@ color: #707070;
   position: relative;
   padding-top: 0;
   margin-top: 0%;
+  top: -89px;
+
   
 }
 
@@ -135,7 +140,7 @@ color: #707070;
   display: inline-block;
   transition: background-color 0.6s ease;
   position: relative;
-  bottom: 180px;
+  top:-89px;
 }
 
 .active, .dot:hover {
@@ -160,8 +165,14 @@ color: #707070;
   to {opacity: 1}
 }
 
-.h3 {
+.location {
+  font-size: 9px;
 text-align: center;
+padding: 9px;
+}
+
+h4 {
+  text-align: center;
 }
 
 .iframe {
@@ -169,14 +180,12 @@ width: 500px;
 height: 500px;
 margin-left: auto;
 margin-right: auto;
-
-
 }
 
 .about {
   line-height: 1.4;
   text-align: left;
-  font-size: 20px;
+  font-size: 10px;
   margin-top: 20px;
 margin-bottom: 50px;
 margin-right: 60px;
@@ -186,8 +195,9 @@ padding-bottom: 80px;
 
 /*--- start  test ---*/
 h2 {
-margin: auto;
-padding: 100px;
+font-size: 25px;
+margin-bottom: 50px;
+padding: 10px;
 }
 
 li, ul, p {
@@ -195,33 +205,33 @@ li, ul, p {
   padding: 0;
 }
 
-body {
-  width:100%;
-  margin:0px;
-  padding:0px;
+p {
+  font-size: 15px;
 }
 
 section {
   width: 50%;
-  margin: 0 auto;
+  margin: 80px;
   position: relative;
 }
 
 
-section  p, ul, li {
+.section  p, ul, li {
+  font-size: 10px;
   color:black;
 }
 
-.special-drinks, .Standard-drinks, .Iced-Drinks, .Hot-Teas {
+.special-drinks, .Standard-Drinks, .Iced-Drinks, .Hot-Teas {
   margin: 0 auto;
+  font-size: 20px;
 }
 
  .menu-item-row {
-  width: 100%;
+  width:  90%;
   display:flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 0 1rem 0;
+  padding: 4 10 1rem 9;
 }
 
 
@@ -233,11 +243,74 @@ section  p, ul, li {
 }
 
 .menu-item-row ul li {
-
-  width:30%;
+  width:10%;
   display:inline-block;
 }
 
+.drink-name{
+  margin-left: 40px;
+  padding-bottom: 2px;
+  
+}
+
+.pannini{
+  font-size: 25px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+ 
+.left{
+  text-align: center;
+  list-style-type: none;
+font-size: 20px;
+margin-right: 100px;
+margin-left: 90px;
+margin-bottom: 40px; 
+}
 
 
-/*--- end test---*/
+.image {
+text-align: center;
+margin-top: 70px;
+margin-right: 70px;
+ margin-bottom: 70px;
+ margin-left: 70px;
+  
+}
+
+.text {
+  list-style-type: none;
+  
+  
+}
+
+.all {
+margin: 50px;
+padding-bottom: 50px;
+}
+@media only screen and (min-width:600px){
+   
+  p {
+    font-size: 20px;
+  }
+  
+ .about{
+  
+  margin-left: 15%;
+  margin-right: 15%;
+ }
+
+ .section  p, ul, li {
+  font-size: 12px;
+ }
+
+ .menu-item-row ul li {
+  width: 30%;
+ } 
+
+ .text {
+   margin-left: 30%;
+   margin-right: 30%;
+ }
+}
