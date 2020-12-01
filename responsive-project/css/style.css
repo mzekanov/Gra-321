@@ -243,19 +243,19 @@ section {
 }
 
 .menu-item-row ul li {
-  width:10%;
+  width:30%;
   display:inline-block;
 }
 
 .drink-name{
   margin-left: 40px;
-  padding-bottom: 2px;
-  
+  padding-bottom: 10px;
 }
 
 .pannini{
   font-size: 25px;
   margin-bottom: 50px;
+  margin-left: 40px;
   padding: 10px;
 }
 
@@ -313,4 +313,13 @@ padding-bottom: 50px;
    margin-left: 30%;
    margin-right: 30%;
  }
+
+ .menu-item-row {
+  width:  70%;
+  display:flex;
+  margin: auto;
+ }
+h2 {
+  margin-left: 30px;
+}
 }
